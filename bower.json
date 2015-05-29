@@ -1,0 +1,16 @@
+{
+  "name": "About Cuong :)",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.9.6",
+    "mdi": "~1.0.62-beta"
+  }
+}

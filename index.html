@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="AboutMeApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>About Cuong Nguyen</title>
+
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" media="all"  type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+  <link rel="stylesheet" href="main.css">
+
+  <meta name="viewport" content="initial-scale=1"/>
+</head>
+
+<body layout="column">
+
+<div ng-controller="MainCtrl as ctrl">
+
+  <div ng-controller="AppCtrl" class="md-padding">
+    <fieldset class="standard">
+      <legend>Using <code>ng-model</code></legend>
+      <div layout="row" layout-wrap>
+        <div flex="50">
+          <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+            Checkbox 1: {{ data.cb1 }}
+          </md-checkbox>
+        </div>
+        <div flex="50">
+          <md-checkbox
+            ng-model="data.cb2"
+            aria-label="Checkbox 2"
+            ng-true-value="'yup'"
+            ng-false-value="'nope'"
+            class="md-warn">
+            Checkbox 2 (md-warn): {{ data.cb2 }}
+          </md-checkbox>
+        </div>
+        <div flex="50">
+          <md-checkbox ng-disabled="true" aria-label="Disabled checkbox" ng-model="data.cb3">
+            Checkbox: Disabled
+          </md-checkbox>
+        </div>
+        <div flex="50">
+          <md-checkbox ng-disabled="true" aria-label="Disabled checked checkbox" ng-model="data.cb4" ng-init="data.cb4=true">
+            Checkbox: Disabled, Checked
+          </md-checkbox>
+        </div>
+        <div flex="50">
+          <md-checkbox md-no-ink aria-label="Checkbox No Ink" ng-model="data.cb5" class="md-primary">
+            Checkbox (md-primary): No Ink
+          </md-checkbox>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+</div>
+
+
+<!-- Angular Material Dependencies -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
